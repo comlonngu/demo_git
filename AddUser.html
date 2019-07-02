@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Page</title>
+    <meta charset="utf-8">
+    <!--<style>
+        input{
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        button{
+            font-size: 20px;
+            background-color: blue;
+            margin: 15px;
+            width: 15%;
+            height: 30px;
+        }
+    </style>
+    style="background-color: deepskyblue; color: black; width: 30%; height: 500px "
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<center>
+    <div class="container" style="background-color: #b0ecea">
+        <br><h3 style="color: black; margin: 10px; font-weight: bold; font-family: sans-serif; "> ADD USER</h3>
+        <form action="/add" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" style="width: 40%" name="fullname" placeholder="FullName"> <br>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" style="width: 40%" name="email" placeholder="Email"> <br>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" style="width: 40%" name="phone" maxlength="10" placeholder="SDT"> <br>
+            </div>
+            <div class="form-group">               
+                <input type="number" class="form-control form-control-lg" style="width: 40%" name="balance" placeholder="Balance"> <br><br>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="margin: 10px"> Add User</button> <br>
+        </form>
+    </div>
+</center>
+</body>
+</html>

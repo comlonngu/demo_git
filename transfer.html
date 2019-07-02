@@ -1,0 +1,24 @@
+<%@ page import="com.CodeCamp2019.model.Customer" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Replace Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <% Integer id = (Integer) request.getAttribute("id"); %>
+    <center>
+        <form action="transferToID" method="post">
+            <h5> Transfers </h5>
+            <input type="hidden" value="<%= id %>" name="fromId"> </h5>
+            <h5> To: <input type="number" name="id" placeholder="ID"></h5> <br>
+            <h5> Amount: <input type="number" name="amount" placeholder="Amount"></h5> <br>
+            <input type="submit" value="Continue">
+        </form>
+    </center>
+
+</body>
+</html>
